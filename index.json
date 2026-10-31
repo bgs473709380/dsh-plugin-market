@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DSH Plugin Market",
+    "zh": "DSH 插件市场"
+  },
+  "description": {
+    "en": "Curated plugin bundles for DeepSeek Harness, maintained by bgs473709380.",
+    "zh": "由 bgs473709380 维护的 DeepSeek Harness 插件市场索引。"
+  },
+  "metadata": {
+    "categories": {
+      "plugins": {
+        "title": {
+          "en": "Plugins",
+          "zh": "插件"
+        }
+      },
+      "tools": {
+        "title": {
+          "en": "Tools",
+          "zh": "工具"
+        }
+      }
+    },
+    "labels": {
+      "private": {
+        "title": {
+          "en": "Private",
+          "zh": "私有"
+        }
+      },
+      "settings": {
+        "title": {
+          "en": "Settings",
+          "zh": "设置"
+        }
+      },
+      "experimental": {
+        "title": {
+          "en": "Experimental",
+          "zh": "实验性"
+        }
+      }
+    },
+    "sortKeys": {
+      "featured": {
+        "title": {
+          "en": "Featured",
+          "zh": "推荐"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-private-plugins",
+      "title": {
+        "en": "Private Plugins",
+        "zh": "私有插件"
+      },
+      "description": {
+        "en": "Import and manage private plugins from private git repositories or local files (tarball upload / folder picker) from a first-class Settings entry.",
+        "zh": "从私有 git 仓库或本地文件（tarball 上传 / 文件夹选择）导入并管理私有插件，设置内独立入口。"
+      },
+      "author": "YINGCHAO-98",
+      "homepage": "https://github.com/YINGCHAO-98/dsh-private-plugins",
+      "repository": {
+        "url": "https://github.com/YINGCHAO-98/dsh-private-plugins"
+      },
+      "metadata": {
+        "category": "plugins",
+        "keywords": [
+          "private",
+          "git",
+          "local",
+          "import",
+          "settings"
+        ],
+        "labels": [
+          "private",
+          "settings"
+        ],
+        "sortKeys": {
+          "featured": 10
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1787842010,
+          "source": {
+            "type": "npm"
+          }
+        }
+      ]
+    }
+  ]
+}
