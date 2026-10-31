@@ -51,10 +51,17 @@ dsh-plugin-market/
 ├── index.json            # 市场索引(format 1)
 ├── docs/
 │   └── index-format.md   # 格式参考:字段、规则、校验要点
+├── plugins/              # 从市场安装的插件归档(见 plugins/README.md)
 ├── README.md
 ├── LICENSE               # MIT
 └── .gitignore
 ```
+
+## 插件归档
+
+`plugins/` 存放从插件市场安装的插件副本(不含 `node_modules`),用于备份、版本对照和离线安装。
+归档约定、按 profile 复制的命令,以及「索引用 git 源直接引用归档目录」的写法,
+见 [plugins/README.md](plugins/README.md)。
 
 ## 新增一个插件条目
 

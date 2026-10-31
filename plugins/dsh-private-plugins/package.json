@@ -1,0 +1,59 @@
+{
+  "name": "dsh-private-plugins",
+  "version": "1.0.0",
+  "description": "Private plugin imports for DeepSeek Harness — import from private git repositories or local files (tarball upload / folder picker) from a first-class Settings entry. · DSH 私有插件：私有仓库 + 本地导入，设置内独立入口。",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YINGCHAO-98/dsh-private-plugins.git"
+  },
+  "homepage": "https://github.com/YINGCHAO-98/dsh-private-plugins#readme",
+  "bugs": {
+    "url": "https://github.com/YINGCHAO-98/dsh-private-plugins/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "private-plugins",
+    "market"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": "./client/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client",
+    "data",
+    "cordis.patch.yml",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-host-webserver": "^0.1.1-rc.1"
+  }
+}
